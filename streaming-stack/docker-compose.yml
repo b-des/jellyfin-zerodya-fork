@@ -6,7 +6,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     volumes:
       - ./jellyfin_config:/config
       - /media/tvshows:/data/tvshows
@@ -22,7 +22,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     volumes:
       - ./sonarr_config:/config
       - /media/anime:/anime
@@ -38,7 +38,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     volumes:
       - ./radarr_config:/config
       - /media/transmission/downloads/complete:/downloads/complete
@@ -53,7 +53,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     volumes:
       - ./bazarr_config:/config
       - /media/movies:/movies #optional
@@ -68,7 +68,7 @@ services:
     container_name: jellyseerr
     environment:
       - LOG_LEVEL=debug
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     ports:
       - 5055:5055
     volumes:

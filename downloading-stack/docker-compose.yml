@@ -6,7 +6,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
       - AUTO_UPDATE=true #optional
     volumes:
       - ./jackett:/config
@@ -21,7 +21,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Rome
+      - TZ=Europe/Kyiv
     volumes:
       - ./transmission:/config
       - /media/transmission/downloads:/downloads
